@@ -18,11 +18,6 @@ const getStats = async (req, res) => {
     const eachPlayer = {};
     for (let i = 0; i < 281; i++) {
       if (i % 14 === 0) {
-        if (eachPlayer.name && eachPlayer.name.includes('트레')) {
-          eachPlayer.rank = 11;
-        } else if (eachPlayer.name && eachPlayer.name.includes('드로잔')) {
-          eachPlayer.rank = 18;
-        }
         dataArr.push({ ...eachPlayer });
         eachPlayer.rank = +arr[i];
       } else if (i % 14 === 1) {
