@@ -7,7 +7,7 @@ const { PORT } = process.env;
 
 server.use(
   cors({
-    origin: 'http://dev-city.link',
+    origin: 'http://localhost:3000',
     credentials: true,
     optionsSuccessStatus: 200,
   }),
